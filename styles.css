@@ -5,7 +5,6 @@
 }
 
 body {
-
     height: 95vh; /* Takes up the screen height */
     display: flex; 
     justify-content: center; 
@@ -14,3 +13,34 @@ body {
     background-color: #f0f2f5;
 }
 
+.login-box {
+    background-color: rgb(204, 119, 186);
+    padding: 2rem;
+    min-width: 300px;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login-box input {
+    padding: 0.75rem;
+    font-size: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; 
+}
+.login-box button {
+    padding: 0.75rem; 
+    font-size: 1rem;
+    background-color: #4a90e2;
+    color: white; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.login-box button:hover {
+    background-color: #357ab7;
+}
