@@ -10,14 +10,17 @@ body {
     justify-content: center; 
     align-items: center; 
     font-family: Arial, sans-serif; 
-    background-color: #f0f2f5;
+    background-color: #042960;
 }
-
+h2{ 
+  text-align: center; 
+}
 .login-box {
-    background-color: rgb(204, 119, 186);
+    background-color: rgb(7, 7, 59);
+    color: white;
     padding: 2rem;
-    min-width: 300px;
-    min-height: 250px;
+    max-width: 300px;
+    min-height: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     display: flex;
@@ -25,22 +28,31 @@ body {
     gap: 1rem;
 }
 .login-box input {
+    color: white;
     padding: 0.75rem;
+    background-color: rgb(6, 6, 117);
+    border: 1px solid #3e08c8;
     font-size: 1rem; 
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 20px;
     width: 100%; 
 }
 .login-box button {
     padding: 0.75rem; 
     font-size: 1rem;
-    background-color: #4a90e2;
+    background-color: #502ca9;
     color: white; 
     border: none;
-    border-radius: 8px; 
+    border-radius: 20px; 
     cursor: pointer;
     transition: background-color 0.3s; 
 }
 .login-box button:hover {
     background-color: #357ab7;
+}
+.login-box input::placeholder {
+    color: white;
+}
+.login-box input:focus {
+    outline: none; 
+    box-shadow: 0 0 5px #3e08c8;
 }
