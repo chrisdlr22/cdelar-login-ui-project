@@ -3,7 +3,28 @@
     margin: 0; 
     padding: 0; 
 }
+.container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.column {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+}
 
+.logo{
+    display: flex; 
+    justify-content: flex-start;
+    max-width: 375px;;
+    height: auto;
+    object-fit: contain;
+}
 body {
     height: 95vh; /* Takes up the screen height */
     display: flex; 
@@ -18,11 +39,12 @@ h2{
   font-family: 'Poppins', sans-serif;
 }
 .login-box {
+    flex: 1; 
     background-color: rgb(7, 7, 59);
     color: white;
     padding: 3rem;
-    min-width: 300px;
-    min-height: 400px;
+    max-width: 345px;
+    min-height: 420px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     display: flex;
@@ -39,12 +61,12 @@ h2{
     width: 100%; 
 }
 .login-box button {
-    padding: 0.75rem; 
-    font-size: 1rem;
+    padding: 1rem; 
+    font-size: 1.5rem;
     background-color: #502ca9;
     color: white; 
     border: none;
-    border-radius: 20px; 
+    border-radius: 40px; 
     cursor: pointer;
     transition: background-color 0.3s; 
     
