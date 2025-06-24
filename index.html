@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login UI Project</title>
     <link rel="stylesheet" href="styles.css" /> <!--  Links to our styles.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Christian De La Rosa Login UI Project</title>
 </head>
 <body>
@@ -15,6 +16,13 @@
         <form> 
             <input type="text" placeholder="Username" required />
             <input type="password" placeholder="Password" required /> 
+            <div class="options">
+                <label class="remember">
+                    <input type="checkbox" /> 
+                    Remember me 
+                </label>
+                <a href="#" class="forgot"> Forgot password?</a>
+            </div>
             <button type="submit">SIGN IN</button>
         </form>
     </div>
